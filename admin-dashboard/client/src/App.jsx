@@ -7,10 +7,6 @@ import Products from './pages/Products'
 import Inventory from './pages/Inventory'
 import Customers from './pages/Customers'
 import Analytics from './pages/Analytics'
-import Coupons from './pages/Coupons'
-import Returns from './pages/Returns'
-import Notifications from './pages/Notifications'
-import Settings from './pages/Settings'
 import PaymentVerifications from './pages/PaymentVerifications'
 
 function App() {
@@ -64,10 +60,6 @@ function App() {
             <Route path="/customers" element={<Customers />} />
             <Route path="/payment-verifications" element={<PaymentVerifications />} />
             <Route path="/analytics" element={<Analytics />} />
-            <Route path="/coupons" element={<Coupons />} />
-            <Route path="/returns" element={<Returns />} />
-            <Route path="/notifications" element={<Notifications />} />
-            <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>
       </div>

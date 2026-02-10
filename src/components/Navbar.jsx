@@ -51,9 +51,9 @@ const Navbar = ({ cartCount }) => {
           ? (scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent backdrop-blur-sm')
           : 'bg-transparent backdrop-blur-sm'
       }`}>
-        <div className="max-w-7xl mx-auto px-6 py-2">
-          <div className="flex items-center justify-between">
-            <Link to="/" className={`text-2xl font-bold tracking-tight transition-all duration-500 ${
+        <div className="w-full px-4 py-3">
+          <div className="flex items-center justify-between w-full">
+            <Link to="/" className={`text-xl font-bold tracking-tight transition-all duration-500 ${
               isContactOrCartPage 
                 ? 'text-accent'
                 : (isHomePage 
@@ -63,7 +63,7 @@ const Navbar = ({ cartCount }) => {
               AM_fashions
             </Link>
 
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4">
               <Link to="/cart" className="relative group">
                 <svg className={`w-6 h-6 transition-all duration-500 ${
                   isContactOrCartPage 

@@ -55,13 +55,14 @@ temp/
 # =================================================
 # Git helper / structure files
 # =================================================
-*.txt
+# *.txt - Commented out to allow documentation files
 
 # =================================================
 # Allow database files explicitly
 # =================================================
 !database/schema.sql
 !database/seed.sql
+!database/*.sql
 
 # =================================================
 # Allow documentation explicitly
@@ -70,4 +71,5 @@ temp/
 !PROJECT_SUMMARY.md
 !QUICKSTART.md
 !TROUBLESHOOTING.md
+!*.txt
 

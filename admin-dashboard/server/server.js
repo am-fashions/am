@@ -97,6 +97,7 @@ import dashboardRoutes from './routes/dashboard.js';
 import analyticsRoutes from './routes/analytics.js';
 import couponRoutes from './routes/coupons.js';
 import paymentVerificationRoutes from './routes/paymentVerification.js';
+import authRoutes from './routes/auth.js';
 
 // Register routes
 app.use('/api/products', productRoutes);
@@ -106,6 +107,7 @@ app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/coupons', couponRoutes);
 app.use('/api/payment-verification', paymentVerificationRoutes);
+app.use('/api/auth', authRoutes);
 
 // ============================================
 // ERROR HANDLING

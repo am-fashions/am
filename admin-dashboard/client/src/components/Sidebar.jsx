@@ -7,10 +7,6 @@ import {
   Boxes, 
   Users, 
   BarChart3, 
-  Ticket, 
-  RotateCcw, 
-  Bell, 
-  Settings,
   X,
   Sparkles,
   CreditCard
@@ -25,10 +21,6 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
     { name: 'Customers', path: '/customers', icon: Users },
     { name: 'Payment Verifications', path: '/payment-verifications', icon: CreditCard },
     { name: 'Analytics', path: '/analytics', icon: BarChart3 },
-    { name: 'Coupons', path: '/coupons', icon: Ticket },
-    { name: 'Returns', path: '/returns', icon: RotateCcw },
-    { name: 'Notifications', path: '/notifications', icon: Bell },
-    { name: 'Settings', path: '/settings', icon: Settings },
   ]
 
   return (
