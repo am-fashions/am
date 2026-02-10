@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { customerAPI, orderAPI } from '../services/api';
-// import Payment from './Payment';
+import Payment from './Payment';
 
 const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
   const [addressForm, setAddressForm] = useState({
@@ -157,14 +157,14 @@ const Cart = ({ cartItems, removeFromCart, updateQuantity }) => {
 
   return (
     <div className="min-h-screen pt-20 px-6 py-16 overflow-x-hidden">
-      {/* Payment Modal - Temporarily disabled */}
-      {/* {showPaymentModal && (
+      {/* Payment Modal */}
+      {showPaymentModal && (
         <Payment
           orderData={orderData}
           onPaymentComplete={handlePaymentComplete}
           onCancel={handlePaymentCancel}
         />
-      )} */}
+      )}
 
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-bold text-accent mb-12 animate-fade-in-up">Shopping Cart</h1>
